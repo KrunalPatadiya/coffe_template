@@ -1,0 +1,29 @@
+App 
+    - Coffee_shop
+        - Navigationmenu
+        - Slider
+        - Maincontent
+            - Section_Card 
+            - Section_2 
+            - Section_4 
+            - Section_5 
+            - Section_6 
+===========================================
+- Home Page (main component)
+
+	- Header or Navigation Bar (component)
+
+	- Slider    
+         - Header  (call)
+         - Footer  (call)
+
+	- About Us (Page or Main component)
+        - Header (call) 
+		- meet our team (sub component)
+		- Our Services (sub Component)
+        - Footer (call)
+
+	- Footer (Page or Main Component)
+		- Address (sub component)
+		- Timing (sub component)
+		- Contact form (sub component)
