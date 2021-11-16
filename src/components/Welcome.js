@@ -12,8 +12,7 @@ function Welcome() {
     //if login is NOT true then navigate to login Page  otherwise we are already in WELCOME page 
     useEffect(() => {
         if(!loginInfo) 
-            navigate('/')
-        
+            navigate('/')    
     },[]);
     
     // ====================================================

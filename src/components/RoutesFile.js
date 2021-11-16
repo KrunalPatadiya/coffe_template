@@ -16,6 +16,9 @@ import Showall_api_data from "./Showall_api_data";
 import Login from "./Login";
 import Welcome from "./Welcome";  
 import  Api_with_pagination from "./Api_with_pagination";
+import Formdataex from "./Formdataex";
+import Formwithformdata from "./Formwithformdata";
+import Antdesigncomponent from "./Antdesigncomponent";
 
 function RoutesFiles() {
   return (
@@ -24,7 +27,7 @@ function RoutesFiles() {
         <Routes>
 
           {/* if user pass any url that doesnt match with our route it will display this heading */}
-          {/* for ex user pass "localhost:3000/display_da" this url it will display that heading because 
+          {/* for ex user pass "localhost:3000/display_da" this url it will display the error page image because 
               there is no route like that */}
           <Route exact path="*" element={<img src={error_page} className="w-50  text-center"/>} />
 
@@ -50,8 +53,17 @@ function RoutesFiles() {
 
 
           {/* =========Login and welcome pagr routes===================== */}
-          <Route exact path="/" element={<Api_with_pagination />} />
+          {/* <Route exact path="/" element={<Api_with_pagination />} /> */}
 
+
+          {/* pass email and password to api for login check using Form data  */}
+           {/* <Route exact path="/" element={<Formdataex  />} /> */}
+
+          
+           <Route exact path="/" element={<Formwithformdata  />} />
+
+              {/* file for ant design excercises */}
+           {/* <Route exact path="/" element={<Antdesigncomponent  />} /> */}
         </Routes>
       </BrowserRouter>
     </>

@@ -44,7 +44,7 @@ const Api_with_pagination =() => {
             <div className="row">
                 {
                     data.map((item) =>
-                        <div class=" col-lg-4 p-0 col-md-4">
+                        <div class=" col-lg-4 p-0  col-md-4">
                             <div class="card border rounded-0 h-100 shadow-lg ">
                                 <div class="card-header text-center p-0 border-0 bg-white">
                                     <img src={item.image} height="200px" />
